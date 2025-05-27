@@ -2,9 +2,10 @@
 <html>
   <head>
     <title>Profile Description</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
   </head>
   <body>
     <h1>Eric.</h1>
-    <img src="pic.png"
+    <img src="{{ url_for('static', filename='pic.png') }}" alt="Eric's profile picture" width="200">
   </body>
 </html>
