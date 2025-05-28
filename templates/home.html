@@ -1,11 +1,122 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Profile Description</title>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
-  </head>
-  <body>
-    <h1>Eric.</h1>
-    <img src="{{ url_for('static', filename='pic.png') }}" alt="Eric's profile picture">
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Profile Description</title>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  
+  <div class="sidebar"> 
+    <h1 style="color: black; font-size: 60px; font-family: Roboto; font-weight:900; word-wrap: break-word">EL.</h1>
+    
+    <div class="nav-container">
+      <a href="#home" class="nav-link">Home</a>
+    </div>
+    <div class="nav-container">
+      <a href="/about" class="nav-link">About</a>
+    </div>
+    <div class="nav-container">
+      <a href="/skills" class="nav-link">Skills</a>
+    </div>
+    <div class="nav-container">
+      <a href="/education" class="nav-link">Education</a>
+    </div>
+    <div class="nav-container">
+      <a href="/contact" class="nav-link">Contact</a>
+    </div>
+    
+    <div class="social-icons">
+      <a href="https://www.facebook.com/ericzxx/" target="_blank" rel="noopener noreferrer" class="icon-link">
+        <img src="{{ url_for('static', filename='facebook.png') }}" alt="Facebook" />
+
+      <a href="https://www.instagram.com/johnerixx/" target="_blank" rel="noopener noreferrer" class="icon-link">
+          <img src="{{ url_for('static', filename='instagram.png') }}" alt="Instagram" />
+      </a>
+
+      <a href="https://github.com/ka-nin" target="_blank" rel="noopener noreferrer" class="icon-link">
+            <img src="{{ url_for('static', filename='social.png') }}" alt="Github" />
+        </a>
+
+      <a href="https://www.linkedin.com/in/jerixx/" target="_blank" rel="noopener noreferrer" class="icon-link">
+            <img src="{{ url_for('static', filename='linkedin.png') }}" alt="Github" />
+        </a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <img src="{{ url_for('static', filename='prof-pic.png') }}" alt="Profile Picture" class="profile-img" />
+    <div id="home" class="profile-name">
+      <span class="background-number">13</span>
+      <h2 class="role">DESIGNER / DEVELOPER</h2>
+      <h2 class="first-name">Eric</h2>
+      <h2 class="last-name">Liwag</h2>
+    </div>
+
+    <div class="section-columns">
+      <div class="column">
+        <h3 class="section-number">01</h3>
+        <h2 class="section-title">UI/UX Design</h2>
+        <p class="section-description">Currently learning at this.</p>
+      </div>
+
+      <div class="column">
+        <h3 class="section-number">02</h3>
+        <h2 class="section-title">Illustration</h2>
+        <p class="section-description">Nice.</p>
+      </div>
+
+      <div class="column">
+        <h3 class="section-number">03</h3>
+        <h2 class="section-title">Graphic Design</h2>
+        <p class="section-description">Very nice.</p>
+      </div>
+
+      <section class="biodata">
+        <h2>BIODATA</h2>
+        <h3>EDUCATION</h3>
+
+        <div class="educ-entry">
+          <div class="year">2023 - Present</div>
+          <div class="details">
+            <h4>Bachelor of Science in Computer Science</h4>
+            <p>Polytechnic University of the Philippines - Sta. Mesa, Manila</p>
+          </div>
+
+          <div class="year">2021 - 2023</div>
+          <div class="details">
+            <h4>Science, Technology, Engineering, and Mathematics</h4>
+            <p>Lagro High School - Quezon City</p>
+        </div>
+      </section>
+
+      <section class="introduction">
+        <h5>INTRODUCTION</h5>
+        <h6>Just a good student :)</h6>
+        <p>(with skills)</p>
+      </section>
+
+
+      <section class="personal-info">
+        <div class="column-left">
+          <p class="info-label">Age</p>
+          <p class="info-label">Residence</p>
+          <p class="info-label">Address</p>
+          <p class="info-label">Email</p>
+          <p class="info-label">Phone</p>
+          
+        </div>
+
+        <div class="column-right">
+          <p>asd</p>
+          
+        </div>
+        
+      </section>
+    </div>
+  
+
+</body>
 </html>
